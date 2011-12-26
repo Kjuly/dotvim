@@ -188,7 +188,7 @@ au BufNewFile,BufRead *.less set filetype=less
 ""Object-C
 let filetype_m='objc'
 
-""LaTeX
+""LaTeX-Suite
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
 " program to always generate a file-name.
@@ -198,3 +198,6 @@ set grepprg=grep\ -nH\ $*
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+" Customize setting for LaTeX-Suite
+let g:Tex_DefaultTargetFormat='pdf' " \ll: compile to pdf format
