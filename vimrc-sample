@@ -1,0 +1,10 @@
+"
+" Maintainer:	Kaijie Yu <kj#kjuly.com>
+" Last change:	2011 Dec 25
+"
+"     *nix and OS/2: ~/.vimrc
+"  MS-DOS and Win32: $VIM\_vimrc
+"	    for OpenVMS: sys$login:.vimrc
+"
+
+source ~/.vim/vimrc
