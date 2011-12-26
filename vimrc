@@ -178,15 +178,23 @@ let OmniCpp_MayCompleteScope = 1
 set tags+=~/.vim/tags/cpp
 " set tags+=~/.vim/tags/python
 
-"""""""
-" 并非上述插件，但
+""并非上述插件，但
 " 全相关
 set completeopt=longest,menu " 只在下拉菜单中显示匹配项目
 
-""""""""""""""""""""""""""""""""""""
-" LessCSS highlight for .less file
+""LessCSS highlight for .less file
 au BufNewFile,BufRead *.less set filetype=less
 
-""""""""""""""""""""""""""""""""""""
-" Object-C
+""Object-C
 let filetype_m='objc'
+
+""LaTeX
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
