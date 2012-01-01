@@ -13,3 +13,13 @@ set guioptions-=T				" Remove toolbar
 set guioptions-=r				" Remove right scrollbar
 set lines=60 columns=100		" UI size
 set guifont=Monaco:h12			" font size
+
+""Cursor settings for MacVim
+" defines the color highlighting used for n-v-c modes( set in 3 )
+highlight Cursor guifg=white guibg=DodgerBlue3
+" defines a different color for insert mode( set in 4 )
+highlight iCursor guifg=white guibg=red
+set guicursor=n-v-c:block-Cursor	" block cursor style
+set guicursor+=i:ver25-iCursor		" sets the cursor shape to a 25% sized vertical bar for insert mode 
+set guicursor+=n-v-c:blinkon0		" disables blinking (blinkon value 0) for n-v-c modes
+"set guicursor+=i:blinkwait10		" increases the default blink rate for insert mode
