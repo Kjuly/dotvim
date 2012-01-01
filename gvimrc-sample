@@ -1,0 +1,15 @@
+"
+" Maintainer:	Kaijie Yu <kj#kjuly.com>
+" Last change:	2012 Jan 1
+"
+"     *nix and OS/2: ~/.gvimrc
+"
+
+source ~/.vim/vimrc
+
+" GUI Setting for MavView
+colorscheme evening				" color scheme
+set guioptions-=T				" Remove toolbar
+set guioptions-=r				" Remove right scrollbar
+set lines=60 columns=100		" UI size
+set guifont=Monaco:h12			" font size
