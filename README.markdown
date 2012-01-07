@@ -1,3 +1,4 @@
+### Usage:
 
     mv download_folder ~/.vim
     cd ~/.vim
