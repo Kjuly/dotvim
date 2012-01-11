@@ -36,9 +36,7 @@ set cinwords=if,else,while,do,for,switch,case
 set formatoptions=tcqr
 set cindent
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=4 shiftwidth=4 softtabstop=4 expandtab " Replace tab to spaces
 set nu " œ‘ æ––∫≈
 set fdm=indent "…Ë÷√’€µ˛
 
