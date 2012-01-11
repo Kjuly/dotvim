@@ -36,7 +36,15 @@ set cinwords=if,else,while,do,for,switch,case
 set formatoptions=tcqr
 set cindent
 
-set tabstop=4 shiftwidth=4 softtabstop=4 expandtab " Replace tab to spaces
+""<Tab> setting
+set tabstop=4       " Number of spaces that will be inserted when the tab key is pressed
+set shiftwidth=4    " Number of space characters inserted for indentation
+set softtabstop=4   " Use <Backspace>/<Delete> to delete a spaced indent as if it was a tab
+set expandtab       " Replace tab to spaces
+                    " 1. Enter a real tab character use |Ctrl-V <Tab>| key sequence.
+                    " 2. To change all the existing tab characters to match the current tab settings,
+                    " use |:retab| in vim
+
 set nu " œ‘ æ––∫≈
 set fdm=indent "…Ë÷√’€µ˛
 
