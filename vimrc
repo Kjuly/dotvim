@@ -37,13 +37,15 @@ set formatoptions=tcqr
 set cindent
 
 ""<Tab> setting
-set tabstop=4       " Number of spaces that will be inserted when the tab key is pressed
-set shiftwidth=4    " Number of space characters inserted for indentation
-set softtabstop=4   " Use <Backspace>/<Delete> to delete a spaced indent as if it was a tab
+set tabstop=2       " Number of spaces that will be inserted when the tab key is pressed
+set shiftwidth=2    " Number of space characters inserted for indentation
+set softtabstop=2   " Use <Backspace>/<Delete> to delete a spaced indent as if it was a tab
 set expandtab       " Replace tab to spaces
                     " 1. Enter a real tab character use |Ctrl-V <Tab>| key sequence.
                     " 2. To change all the existing tab characters to match the current tab settings,
                     " use |:retab| in vim
+" Only Python use 4 spaces as a tab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4
 
 set nu " œ‘ æ––∫≈
 set fdm=indent "…Ë÷√’€µ˛
