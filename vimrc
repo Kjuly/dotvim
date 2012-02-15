@@ -46,6 +46,8 @@ set expandtab       " Replace tab to spaces
                     " use |:retab| in vim
 " Only Python use 4 spaces as a tab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4
+" remapped Shift-Tab so could easily insert real tabs at the beginning of the line when necessary
+inoremap <S-Tab> <C-V><Tab>
 
 set nu " ÏÔÊ¾ĞĞºÅ
 set fdm=indent "ÉèÖÃÕÛµş
