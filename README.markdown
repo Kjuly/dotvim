@@ -1,6 +1,0 @@
-### Usage:
-
-    mv download_folder ~/.vim
-    cd ~/.vim
-    cp vimrc-sample ~/.vimrc
-	cp gvimrc-sample ~/.gvimrc
