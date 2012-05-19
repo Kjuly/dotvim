@@ -7,6 +7,9 @@
 "	    for OpenVMS: sys$login:.vimrc
 "
 
+" pathogen | manage the plugins
+call pathogen#infect()
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
