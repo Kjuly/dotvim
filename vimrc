@@ -168,6 +168,14 @@ let g:bufExplorerUseCurrentWindow=1 " open in new window
 autocmd BufWinEnter \[Buf\ List\] setl nonumber
 
 """"""""""""""""""""""""""""""""""""
+" Vim Indent Guide
+let g:indent_guides_guide_size=1
+let g:indent_guides_start_level=2
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=4
+
+""""""""""""""""""""""""""""""""""""
 " OmniCppComplete
 let OmniCpp_DisplayMode = 1 " 显示私有和公有成员
 let OmniCpp_GlobalScopeSearch = 1
