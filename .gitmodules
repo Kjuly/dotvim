@@ -1,6 +1,6 @@
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule "bundle/git-nerdtree"]
+	path = bundle/git-nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/taglist"]
-	path = bundle/taglist
+[submodule "bundle/git-taglist"]
+	path = bundle/git-taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
