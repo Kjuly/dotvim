@@ -4,3 +4,6 @@
 [submodule "bundle/git-taglist"]
 	path = bundle/git-taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/git-vim-indent"]
+	path = bundle/git-vim-indent
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
