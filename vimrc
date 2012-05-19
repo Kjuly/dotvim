@@ -1,5 +1,5 @@
 "
-" Maintainer:	Kaijie Yu <kj#kjuly.com>
+" maintainer:	Kaijie Yu [kj#kjuly.com>
 " Last change:	2011 Dec 25
 "
 "     *nix and OS/2: ~/.vimrc
@@ -27,13 +27,13 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch	" do incremental searching
 
-" Vim±àÂëÉèÖÃ
+" Vimç¼–ç è®¾ç½®
 set enc=utf-8
 " set fenc=utf-8
-set fenc=gb18030 " Îª¼æÈİWindowsÏÂµÄgbk(cp936)±àÂëÀ´¿ª·¢ÏîÄ¿
+set fenc=gb18030 " ä¸ºå…¼å®¹Windowsä¸‹çš„gbk(cp936)ç¼–ç æ¥å¼€å‘é¡¹ç›®
 set fencs=ucs-bom,utf-8,gb18030,gbk
 
-set nocp " ¹Ø±ÕÑÏ¸ñµÄvi¼æÈİÄÜÁ¦
+set nocp " å…³é—­ä¸¥æ ¼çš„viå…¼å®¹èƒ½åŠ›
 set cinoptions=:0,p0,t0
 set cinwords=if,else,while,do,for,switch,case
 set formatoptions=tcqr
@@ -52,19 +52,19 @@ autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4
 " remapped Shift-Tab so could easily insert real tabs at the beginning of the line when necessary
 inoremap <S-Tab> <C-V><Tab>
 
-set nu " ÏÔÊ¾ĞĞºÅ
-set fdm=indent "ÉèÖÃÕÛµş
+set nu " æ˜¾ç¤ºè¡Œå·
+set fdm=indent "è®¾ç½®æŠ˜å 
 
-" set autochdir " ×Ô¶¯ÇĞ»»¹¤×÷Ä¿Â¼£¬ÒÔµ±Ç°´ò¿ªµÄÎÄ¼şËùÔÚÄ¿Â¼Îª×¼
+" set autochdir " è‡ªåŠ¨åˆ‡æ¢å·¥ä½œç›®å½•ï¼Œä»¥å½“å‰æ‰“å¼€çš„æ–‡ä»¶æ‰€åœ¨ç›®å½•ä¸ºå‡†
 
-" ¶¨Òå²éÕÒÂ·¾¶
+" å®šä¹‰æŸ¥æ‰¾è·¯å¾„
 set path=.,,~/KJuly/c/**,~/KJuly/acm/**,~/KJuly/java/**
 
 run macros/gdb_mappings.vim
 set previewheight=12
 " set asm=0
 
-" ÉèÖÃSessionÑ¡Ïî, sesdirÎª±£´æÏà¶ÔÂ·¾¶£¬¶øcurdir±£´æ¾ø¶ÔÂ·¾¶
+" è®¾ç½®Sessioné€‰é¡¹, sesdirä¸ºä¿å­˜ç›¸å¯¹è·¯å¾„ï¼Œè€Œcurdirä¿å­˜ç»å¯¹è·¯å¾„
 set sessionoptions-=curdir
 set sessionoptions+=sesdir
 
@@ -136,20 +136,20 @@ if !exists(":DiffOrig")
 endif
 
 
-set exrc   " ÔÊĞí¼ÓÔØÏîÄ¿×ÔÉíµÄ.vimrcÎÄ¼ş
-set secure " ±ÜÃâ²»°²È«ÃüÁîµÄÖ´ĞĞ
+set exrc   " å…è®¸åŠ è½½é¡¹ç›®è‡ªèº«çš„.vimrcæ–‡ä»¶
+set secure " é¿å…ä¸å®‰å…¨å‘½ä»¤çš„æ‰§è¡Œ
 """"""""""""""""""""""""""""""""""""""
 " Tag list ( ctags ) plugin configure
 """"""""""""""""""""""""""""""""""""""
 let Tlist_Auto_Open=0
-let Tlist_Ctags_Cmd='/opt/local/bin/ctags' " CtagsÂ·¾¶
+let Tlist_Ctags_Cmd='/opt/local/bin/ctags' " Ctagsè·¯å¾„
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Enable_Fold_Column=0
-let Tlist_Show_One_File=0 " Ö»ÏÔÊ¾µ±Ç°ÎÄ¼şÏÂµÄ±êÇ©
-let Tlist_File_Fold_Auto_Close=1 " µ±ÏÔÊ¾¶à¸öÎÄ¼ş±êÇ©Ê±£¬¿É½«ÆäËüÎÄ¼şµÄÕÛµş
-let Tlist_Sort_Type="name" " ±êÇ©°´ÕÕÃû³ÆÅÅÁĞ
+let Tlist_Show_One_File=0 " åªæ˜¾ç¤ºå½“å‰æ–‡ä»¶ä¸‹çš„æ ‡ç­¾
+let Tlist_File_Fold_Auto_Close=1 " å½“æ˜¾ç¤ºå¤šä¸ªæ–‡ä»¶æ ‡ç­¾æ—¶ï¼Œå¯å°†å…¶å®ƒæ–‡ä»¶çš„æŠ˜å 
+let Tlist_Sort_Type="name" " æ ‡ç­¾æŒ‰ç…§åç§°æ’åˆ—
 let Tlist_WinWidth=35
-let Tlist_Use_Right_Window=0 " ÓÒ²àÏÔÊ¾
+let Tlist_Use_Right_Window=0 " å³ä¾§æ˜¾ç¤º
 
 "map <silent> <F9> :TlistToggle<cr>
 nnoremap <Leader>t :TlistToggle<cr>
@@ -169,7 +169,7 @@ autocmd BufWinEnter \[Buf\ List\] setl nonumber
 
 """"""""""""""""""""""""""""""""""""
 " OmniCppComplete
-let OmniCpp_DisplayMode = 1 " ÏÔÊ¾Ë½ÓĞºÍ¹«ÓĞ³ÉÔ±
+let OmniCpp_DisplayMode = 1 " æ˜¾ç¤ºç§æœ‰å’Œå…¬æœ‰æˆå‘˜
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_ShowPrototypeInAbbr = 1
@@ -189,9 +189,9 @@ let OmniCpp_MayCompleteScope = 1
 set tags+=~/.vim/tags/cpp
 " set tags+=~/.vim/tags/python
 
-""²¢·ÇÉÏÊö²å¼ş£¬µ«
-" È«Ïà¹Ø
-set completeopt=longest,menu " Ö»ÔÚÏÂÀ­²Ëµ¥ÖĞÏÔÊ¾Æ¥ÅäÏîÄ¿
+""å¹¶éä¸Šè¿°æ’ä»¶ï¼Œä½†
+" å…¨ç›¸å…³
+set completeopt=longest,menu " åªåœ¨ä¸‹æ‹‰èœå•ä¸­æ˜¾ç¤ºåŒ¹é…é¡¹ç›®
 
 ""LessCSS highlight for .less file
 au BufNewFile,BufRead *.less set filetype=less
